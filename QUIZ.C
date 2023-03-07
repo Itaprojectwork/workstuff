@@ -3,10 +3,13 @@
 void sci();
 void his();
 void tech();
+int score=0;
 void main()
 {
 int sub;
+char cont;
 clrscr();
+label:
 printf("Welcome to Quisomanio!\n");
 printf("Instructions:\nYou wil be quizzed on one subject of your choice.");
 printf("\n3 questions with 4 options will be asked.");
@@ -29,11 +32,17 @@ switch(sub)
       printf("\nYou have chosen the wrong subject");
       break;
 }
+printf("\nDo You Want To Continue?(Y/N): ");
+scanf(" %c",&cont);
+if(cont=='Y'||cont=='y')
+  goto label;
+else
+  exit(0);
 getch();
 }
 void sci()
 {
- int score=0;
+// int score=0;
  char option1,option2,option3;
  printf("\n1) Which of the following organisms breath from skin?\n");
  printf("A.Snake\nB.Earthworm\nC.Monkey\nD.Humans\n");
@@ -83,7 +92,7 @@ void sci()
 }
 void his()
 {
- int score=0;
+// int score=0;
  char option1,option2,option3;
  printf("\n1) What was the major cause of discontent among the soldiers ");
  printf("before the revolt  of1857?\nA.The religious cause\nB.Question of");
@@ -133,7 +142,7 @@ void his()
 }
 void tech()
 {
- int score=0;
+// int score=0;
  char option1,option2,option3;
  printf("\n1) A variable that holds the memory address of another ");
  printf(" object is called\nA.Memory variable\nB.Constant\nC.Pointer\n");
