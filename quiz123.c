@@ -2,7 +2,7 @@
 void sci();
 void his();
 void tech();
-int count=0;
+int score=0;
 void main()
 {
 int sub;
