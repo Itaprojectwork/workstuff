@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 void sci();
 void his();
 void tech();
@@ -8,13 +7,13 @@ void main()
 {
 int sub;
 char cont;
-clrscr();
-label:
 printf("Welcome to Quisomanio!\n");
 printf("Instructions:\nYou wil be quizzed on one subject of your choice.");
+
 printf("\n3 questions with 4 options will be asked.");
 printf("\nEach correct answer ");
 printf(" carries 4 marks and 0 marks will be awarded for incorrect  answer");
+label:
 printf("\nPICK A SUBJECt!\n1.Science\n2.History\n3.Technology\n");
 scanf("%d",&sub);
 switch(sub)
@@ -37,13 +36,11 @@ scanf(" %c",&cont);
 if(cont=='Y'||cont=='y')
   goto label;
 else
-  exit(0);
-getch();
+  exit(1);
 }
 void sci()
 {
-// int score=0;
- char option1,option2,option3;
+ char option1,option2,option3,option4,option5;
  printf("\n1) Which of the following organisms breath from skin?\n");
  printf("A.Snake\nB.Earthworm\nC.Monkey\nD.Humans\n");
  printf("\nChoose the correct answer: ");
@@ -88,12 +85,40 @@ void sci()
  printf("Wrong Answer!\n");
  printf("Correct Answer is : D\n");
  }
+ printf("\n4) Brass gets discoloured in air because of\n");
+ printf("A.Oxygen\nB.Hydrogen Sulphide\nC.Carbon dioxide\nD.Nitrogen\n");
+ printf("\nChoose the correct answer: ");
+ scanf(" %c",&option4);
+ if(option4=='B'||option4=='b')
+ {
+  printf("Correct Answer!\n");
+  score=score+4;
+  }
+ else
+ {
+ printf("Wrong Answer!\n");
+ printf("Correct Answer is : D\n");
+ }
+ printf("\n5) How many bones are there in a human body?\n");
+ printf("A.210\nB.298\nC.206\nD.200\n");
+ printf("\nChoose the correct answer: ");
+ scanf(" %c",&option5);
+ if(option5=='C'||option5=='c')
+ {
+  printf("Correct Answer!\n");
+  score=score+4;
+  }
+ else
+ {
+ printf("Wrong Answer!\n");
+ printf("Correct Answer is : D\n");
+ }
  printf("\nThe total Score is : %d",score);
 }
+
 void his()
 {
-// int score=0;
- char option1,option2,option3;
+ char option1,option2,option3,option4,option5;
  printf("\n1) What was the major cause of discontent among the soldiers ");
  printf("before the revolt  of1857?\nA.The religious cause\nB.Question of");
  printf(" promotion and pay\nC.Political cause\nD.None of these\n");
@@ -138,12 +163,40 @@ void his()
  printf("Wrong Answer!\n");
  printf("Correct Answer is : C\n");
  }
+ printf("\n4) The battle of plassey was fought in the year\n");
+ printf("A.1757\nB.1782\nC.1748\nD.1764\n");
+ printf("\nChoose the correct answer: ");
+ scanf(" %c",&option4);
+ if(option4=='A'||option4=='a')
+ {
+  printf("Correct Answer!\n");
+  score=score+4;
+  }
+ else
+ {
+ printf("Wrong Answer!\n");
+ printf("Correct Answer is : D\n");
+ }
+ printf("\n5) Who gave the slogan DO OR DIE?\n");
+ printf("A.\Mahatma Gandhi\nB.Jawaharlal Nehru\nC.Bal Gangadhar Tilak");
+ printf("\nD.Subash Chandra Bose\n");
+ printf("\nChoose the correct answer: ");
+ scanf(" %c",&option5);
+ if(option5=='A'||option5=='a')
+ {
+  printf("Correct Answer!\n");
+  score=score+4;
+  }
+ else
+ {
+ printf("Wrong Answer!\n");
+ printf("Correct Answer is : D\n");
+ }
  printf("\nThe total Score is : %d",score);
 }
 void tech()
 {
-// int score=0;
- char option1,option2,option3;
+ char option1,option2,option3,option4,option5;
  printf("\n1) A variable that holds the memory address of another ");
  printf(" object is called\nA.Memory variable\nB.Constant\nC.Pointer\n");
  printf("D.Integer\n");
@@ -186,6 +239,35 @@ void tech()
  {
  printf("Wrong Answer!\n");
  printf("Correct Answer is : A\n");
+ }
+ printf("\n4) Who is the father of C language?\n");
+ printf("A.Steve Jobs\nB.James Gosling\nC.Dennis Ritche\nD.Rasmus Lerdorf\n");
+ printf("\nChoose the correct answer: ");
+ scanf(" %c",&option4);
+ if(option4=='C'||option4=='c')
+ {
+  printf("Correct Answer!\n");
+  score=score+4;
+  }
+ else
+ {
+ printf("Wrong Answer!\n");
+ printf("Correct Answer is : D\n");
+ }
+ printf("\n5) OS computer abbreviation refers to\n");
+ printf("A.Order of Significance\nB.Open Software\nC.Operating System\n");
+ printf("D.Optical Sensor\n");
+ printf("\nChoose the correct answer: ");
+ scanf(" %c",&option5);
+ if(option5=='C'||option5=='c')
+ {
+  printf("Correct Answer!\n");
+  score=score+4;
+  }
+ else
+ {
+ printf("Wrong Answer!\n");
+ printf("Correct Answer is : D\n");
  }
  printf("\nThe total Score is : %d",score);
 }
